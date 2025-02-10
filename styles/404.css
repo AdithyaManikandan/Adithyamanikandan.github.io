@@ -1,0 +1,106 @@
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, rgba(24,23,23,1) 18%, rgba(0,0,0,1) 60%, rgba(0,12,19,1) 96%);
+
+    background-size: 150% 150%;
+    -webkit-animation: move 4s ease-in-out infinite;
+  }
+
+  #notfound {
+    position: relative;
+    height: 100vh;
+
+  }
+
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .notfound h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 86px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+    background: -webkit-linear-gradient(225deg, #FF3CAC , #784BA0, #2B86C5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 150% 150%;
+    -webkit-animation: move 4s ease-in-out infinite;
+    }
+
+  .notfound h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+    background: -webkit-linear-gradient(225deg, #FF3CAC , #784BA0, #2B86C5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 150% 150%;
+    -webkit-animation: move 4s ease-in-out infinite;
+  }
+
+  .notfound a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(225deg, #FF3CAC , #784BA0, #2B86C5 );
+    background-size: 150% 150%;
+    -webkit-animation: move 4s ease-in-out infinite;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: rgb(24,23,23);
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+
+  @-webkit-keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  }
+
+  @media only screen and (max-width: 767px) {
+      .notfound .notfound-bg {
+        width: 287px;
+        margin: auto;
+      }
+
+      .notfound .notfound-bg > div {
+        height: 85px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .notfound h1 {
+      font-size: 68px;
+    }
+
+    .notfound h2 {
+      font-size: 18px;
+    }
+  }
